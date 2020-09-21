@@ -1,0 +1,30 @@
+:guid: %guid%
+:user: %user%
+:markup-in-source: verbatim,attributes,quotes
+
+== Overview
+
+In this workshop you will... to be completed by the workshop developer.
+The following content is an example of what to include in an overview.
+
+=== Lab Access
+
+You can access your lab environment as {user} with password "{ssh_password}" with the following command:
+
+[source,bash,options="nowrap",subs="{markup-in-source}"]
+----
+%ssh_command%
+----
+
+Your lab GUID is "{guid}".
+
+An example var was set to %example_var%.
+
+=== Workshop Information
+
+Informational messages generated for your workshop:
+
+[source,bash,options="nowrap"]
+----
+%user_info_messages%
+----

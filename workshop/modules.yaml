@@ -1,0 +1,16 @@
+---
+modules:
+  overview:
+    name: Overview
+    exit_sign: Continue
+  exercise1:
+    name: Exercise 1
+    exit_sign: Continue
+  exercise2:
+    name: Exercise 2
+    exit_sign: Continue
+  exercise3:
+    name: Exercise 3
+    exit_sign: Continue
+  review:
+    name: Review

@@ -1,0 +1,14 @@
+:guid: %guid%
+:user: %user%
+:markup-in-source: verbatim,attributes,quotes
+
+== Exercise 3
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Nam quam arcu, accumsan eget ligula sed, aliquet vehicula felis.
+Aliquam aliquam pellentesque fringilla.
+Nam porttitor, orci vel cursus ultrices, diam dolor maximus metus, eget elementum felis ante vitae ex.
+Mauris ligula eros, venenatis eu tincidunt eu, pulvinar vitae lectus.
+Aliquam facilisis lectus viverra vestibulum ornare.
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+Etiam accumsan efficitur sapien.

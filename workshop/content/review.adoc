@@ -1,0 +1,12 @@
+:markup-in-source: verbatim,attributes,quotes
+
+== Review
+
+Hopefully you learned a few things in this lab:
+
+* Thing one
+* Thing two
+
+For more information... etc...
+
+Thank you!
