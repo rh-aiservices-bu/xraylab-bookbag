@@ -1,0 +1,22 @@
+apiVersion: integreatly.org/v1alpha1
+kind: GrafanaDataSource
+metadata:
+  name: prometheus-grafana-datasource
+spec:
+  datasources:
+    - basicAuthUser: internal
+      access: proxy
+      secureJsonData: {}
+      name: prometheus
+      url: 'https://prometheus-k8s.openshift-monitoring.svc:9091'
+      basicAuthPassword: >-
+        Gmas1jowF1NrvlwY0AaUuv/S27vmwGT2p7eofDij7jNlWW+yWtq/db6aYZ37ccRnnIRFIc5P8JhKoW/gKpoO5K1m4eRvzE1v/OWwFNQOTlrAowX1o+ee3uwhO9F4lyAa7z68psna17yGCwe9y+JiocAsfJNYQaVsldJp+weO3sK74jVg4u0c0W+AZ44rrLGN07xNm3ZL3hg7FFIRBu9SAmOsJCHrOoQrSbrVGxXkobyttW/tw72r7o+eXdmlx7zRCiux0mkzGrCsY06X9HNkx57/cJL/bCU8JUnPVDipcQd6XslBEnjs/toJjgo/rAB8reqicRQ5DQkZpAiX+Nd0
+      jsonData:
+        timeInterval: 5s
+        tlsSkipVerify: true
+      basicAuth: true
+      version: 1
+      type: prometheus
+      orgId: 1
+  name: grafana-prometheus-datasource.yaml
+

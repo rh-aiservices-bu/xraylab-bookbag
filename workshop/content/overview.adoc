@@ -4,8 +4,12 @@
 
 == Overview
 
-In this workshop you will... to be completed by the workshop developer.
-The following content is an example of what to include in an overview.
+Welcome to the automated Xray images analysis pipeline lab! +
+
+In this Lab you will learn how to create, configure, and deploy an automated pipeline that will analyze Xray images, make a risk assessement on the risk of pneumonia, and anonymize the image based on the certainty of the assessment. +
+
+If at this point you have no idea of what I am talking about, I *strongly* suggest that you watch this small introduction video: +
+video::zhax8jUDMLU[youtube]
 
 === Lab Access
 
