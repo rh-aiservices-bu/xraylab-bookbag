@@ -2,15 +2,72 @@
 modules:
   overview:
     name: Overview
-    exit_sign: Continue
-  exercise1:
-    name: Exercise 1
-    exit_sign: Continue
-  exercise2:
-    name: Exercise 2
-    exit_sign: Continue
-  exercise3:
-    name: Exercise 3
-    exit_sign: Continue
+    exit_sign: Bookbag
+  bookbag:
+    name: Bookbag
+    exit_sign: Lab Environment
+  environment:
+    name: Lab Environment
+    exit_sign: OpenDataHub
+  opendatahub:
+    name: OpenDataHub
+    exit_sign: ConfigMaps and Secrets
+  envvar:
+    name: ConfigMaps and Secrets
+    exit_sign: Helper Database
+  database:
+    name: Helper Database
+    exit_sign: Image Streams
+  imagestreams:
+    name: Image Streams
+    exit_sign: Kafka Cluster
+  kafkacluster:
+    name: Kafka Cluster
+    exit_sign: Kafka Topic
+  topic:
+    name: Kafka Topic
+    exit_sign: Kafdrop
+  kafdrop: 
+    name: Kafdrop
+    exit_sign: Image Server
+  imageserver:
+    name: Image Server
+    exit_sign: Serverless Service
+  service:
+    name: Serverless Service
+    exit_sign: KafkaSource
+  kafkasource:
+    name: KafkaSource
+    exit_sign: Image Generator
+  imagegenerator:
+    name: Image Generator
+    exit_sign: Grafana MySQL DataSource
+  grafanamysql:
+    name: Grafana MySQL DataSource
+    exit_sign: Grafana Images Dashboard
+  grafanaimages:
+    name: Grafana Images Dashboard
+    exit_sign: Grafana Main Dashboard
+  grafanadashboard:
+    name: Grafana Main Dashboard
+    exit_sign: Grafana
+  grafana:
+    name: Grafana
+    exit_sign: Buckets
+  buckets:
+    name: Buckets
+    exit_sign: Run the demo!
+  rundemo:
+    name: Run the demo!
+    exit_sign: Increase Images Rate
+  imagesrate:
+    name: Increase images rate
+    exit_sign: Change Model Version
+  changeversion:
+    name: Change Model Version
+    exit_sign: Stop the demo!
+  stopdemo:
+    name: Stop the demo!
+    exit_sign: Review
   review:
     name: Review

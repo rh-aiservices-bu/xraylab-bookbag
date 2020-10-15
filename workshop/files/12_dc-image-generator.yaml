@@ -73,10 +73,10 @@ spec:
                   key: bucket-source
           resources:
             limits:
-                cpu: '2'
-                memory: 1G
+                cpu: 500m
+                memory: 200M
             requests:
-              cpu: 400m
+              cpu: 200m
               memory: 100M
           imagePullPolicy: IfNotPresent
       restartPolicy: Always
