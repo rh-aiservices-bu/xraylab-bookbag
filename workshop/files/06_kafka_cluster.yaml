@@ -17,6 +17,13 @@ spec:
     listeners:
       plain: {}
     replicas: 1
+    resources:
+      limits:
+        cpu: 500m
+        memory: 1Gi
+      requests:
+        cpu: 100m
+        memory: 256Mi
     storage:
       type: ephemeral
     version: 2.5.0

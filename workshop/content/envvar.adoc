@@ -95,6 +95,15 @@ and
 sed -i 's/AWS_SECRET_ACCESS_KEY_replace_me/{SECRET_KEY}/g' 03_secrets.yaml
 ----
 
+=== Step 5: Create the Secrets
+
+Now that our file is ready, we can create the Secrets:
+
+[source,bash,subs="{markup-in-source}",role=execute]
+----
+oc apply -f 03_secrets.yaml
+----
+
 === Step 5: Verification
 
 * Change your workspace to the Console, navigate to Projects and select `xraylab-{GUID}`.
