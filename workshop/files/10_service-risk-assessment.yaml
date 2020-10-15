@@ -10,7 +10,7 @@ spec:
           revisionTimestamp: ''
     spec:
       containers:
-      - image: quay.io/guimou/xraylab-risk-assessment:latest
+      - image: xraylab-risk-assessment:latest
         ports:
               - containerPort: 5000
         env:
@@ -58,9 +58,9 @@ spec:
               key: bucket-base-name
         resources:
           limits:
-            cpu: '2'
+            cpu: '1'
             memory: 1G
           requests:
             cpu: 400m
-            memory: 100M
+            memory: 500M
 

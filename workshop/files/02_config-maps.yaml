@@ -1,10 +1,19 @@
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: buckets-config
+data:
+  bucket-base-name: 'bucket-base-name_replace_me'
+  bucket-source: 'https://s3.us-east-1.amazonaws.com/com.redhat.csds.guimou.xray-source'
+---
 apiVersion: v1
 kind: ConfigMap
 metadata:
   name: service-point
 data:
-  url: 'replace_me' # No trailing /
-  url-external: 'replace_me' # No trailing /
+  url-external: 'url-external_replace_me' # No trailing /
+  url: 'http://rook-ceph-rgw-s3a.openshift-storage.svc.cluster.local' # No trailing /
 ---
 apiVersion: v1
 kind: ConfigMap
@@ -12,11 +21,3 @@ metadata:
   name: database-host
 data:
   url: xraylabdb
----
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: buckets-config
-data:
-  bucket-source: 'replace_me'
-  bucket-base-name: 'replace_me'

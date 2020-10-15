@@ -1,34 +1,24 @@
-:guid: %guid%
-:user: %user%
+:GUID: %guid%
+:OCP_USERNAME: %ocp_username%
 :markup-in-source: verbatim,attributes,quotes
 
-== Overview
+== Welcome!
 
-Welcome to the automated Xray images analysis pipeline lab! +
+Welcome to the automated Xray images analysis pipeline Lab! +
 
-In this Lab you will learn how to create, configure, and deploy an automated pipeline that will analyze Xray images, make a risk assessement on the risk of pneumonia, and anonymize the image based on the certainty of the assessment. +
+In this Lab you will learn how to create, configure, and deploy an automated pipeline that will analyze incoming Xray images, make an assessement of the risk of pneumonia, and optionally anonymize some images based on the certainty of this assessment. +
 
-If at this point you have no idea of what I am talking about, I *strongly* suggest that you watch this small introduction video: +
-video::zhax8jUDMLU[youtube]
+This pipeline uses several tools and features, and we'll learn together how to:
 
-=== Lab Access
+- Deploy a minimal installation of *Open Data Hub* and use *Jupyter Notebooks*.
+- Deploy a minimal *Kafka Cluster* and create a *Kafka Topic* with the *AMQ Streams* operator.
+- Create object buckets in *OpenShift Container Storage* (using the Rados Gateway), and configure *Bucket notifications* to the Kafka topic.
+- Create a *Serverless Service* and a *KafkaSource* listener to process events from the Kafka topic.
+- Create *Grafana* Data Sources and Dashboards to monitor our pipeline.
+- Run the demo!
 
-You can access your lab environment as {user} with password "{ssh_password}" with the following command:
+If at this point you have no idea of what I am talking about, I *strongly* suggest that you watch this ntroduction video (~15mn) that will explain the use case, and how this demo works: +
 
-[source,bash,options="nowrap",subs="{markup-in-source}"]
-----
-%ssh_command%
-----
+video::yX8gCiZvOqU[youtube]
 
-Your lab GUID is "{guid}".
-
-An example var was set to %example_var%.
-
-=== Workshop Information
-
-Informational messages generated for your workshop:
-
-[source,bash,options="nowrap"]
-----
-%user_info_messages%
-----
+Now you should know what you will do in this Lab: reproduce this demo yourself!
