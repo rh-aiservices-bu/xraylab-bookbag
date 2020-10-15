@@ -54,7 +54,7 @@ Again, you can edit the file `02_config-maps.yaml` or simply do:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-sed -i 's/url-external_replace_me/http:\/\/rgw-openshift-storage.{CLUSTER_SUBDOMAIN}/g' 02_config-maps.yaml
+sed -i 's/url-external_replace_me/https:\/\/rgw-openshift-storage.{CLUSTER_SUBDOMAIN}/g' 02_config-maps.yaml
 ----
 
 === Step 3: Create Config Maps
