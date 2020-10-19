@@ -30,4 +30,5 @@ You will need the following info:
 
 * AWS_ACCESS_KEY: `{ACCESS_KEY}`
 * AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
+* bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommandation, this should be `xraylab-{GUID}`.
 

@@ -17,7 +17,7 @@ This pipeline uses several tools and features, and we'll learn together how to:
 - Create *Grafana* Data Sources and Dashboards to monitor our pipeline.
 - Run the demo!
 
-If at this point you have no idea of what I am talking about, I *strongly* suggest that you watch this ntroduction video (~15mn) that will explain the use case, and how this demo works: +
+If at this point you have no idea of what I am talking about, I *strongly* suggest that you watch this introduction video (~15mn) that will explain the use case, and how this demo works: +
 
 video::yX8gCiZvOqU[youtube]
 
