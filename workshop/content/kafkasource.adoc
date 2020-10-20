@@ -2,7 +2,7 @@
 :OCP_USERNAME: %ocp_username%
 :markup-in-source: verbatim,attributes,quotes
 
-== KNative Serving
+== KNative Eventing
 
 Our next component is the one that will subscribe to the Kafka Topic, and forward the messages to the Service we just created. +
 
