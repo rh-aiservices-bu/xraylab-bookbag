@@ -705,6 +705,7 @@ objects:
             },
             "hiddenSeries": false,
             "id": 4,
+            "interval": "10s",
             "legend": {
               "alignAsTable": false,
               "avg": false,
@@ -1053,6 +1054,7 @@ objects:
             },
             "hiddenSeries": false,
             "id": 16,
+            "interval": "10s",
             "legend": {
               "avg": false,
               "current": false,
@@ -1215,7 +1217,7 @@ objects:
           ]
         },
         "time": {
-          "from": "now-15m",
+          "from": "now-5m",
           "to": "now"
         },
         "timepicker": {
