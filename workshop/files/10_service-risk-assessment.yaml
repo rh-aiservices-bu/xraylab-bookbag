@@ -11,7 +11,7 @@ spec:
           revisionTimestamp: ''
     spec:
       containers:
-      - image: 'image-registry.openshift-image-registry.svc:5000/xraylab/risk-assessment:latest'
+      - image: 'quay.io/guimou/xraylab-risk-assessment:rhtr_v1.4'
         ports:
               - containerPort: 5000
         env:
