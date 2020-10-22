@@ -31,7 +31,15 @@ Now using project "xraylab-{GUID}" on server ...
 
 === Step 2: Edit Config Maps
 
-Provided you are still in the `files` directory in the Terminal (full path `/opt/app-root/workshop/files`), you can take a look at the config maps file:
+You should still be in the `files` directory in the Terminal (full path `/opt/app-root/workshop/files`). +
+If not change your directory to where the installation files are:
+
+[source,bash,subs="{markup-in-source}",role=execute]
+----
+cd /opt/app-root/workshop/files
+----
+
+Then take a look at the config maps file:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----

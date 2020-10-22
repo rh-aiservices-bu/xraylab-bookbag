@@ -26,9 +26,10 @@ Your Jupyter environment will take 15-20 seconds to launch.
 
 It will display a _File Explore like_ interface. Click on the *xraylab_notebooks.git* folder, then on the *create_notifications.ipynb* file, which will launch the notebook. You can directly follow the rest of the instructions there.
 
-You will need the following info:
+IMPORTANT: At the begining of the notebook, don't forget to enter the parameters! You will need the following info:
 
+* bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommandation, this should be `xraylab-{GUID}`.
 * AWS_ACCESS_KEY: `{ACCESS_KEY}`
 * AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
-* bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommandation, this should be `xraylab-{GUID}`.
+
 
