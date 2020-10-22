@@ -59,8 +59,8 @@ spec:
               key: bucket-base-name
         resources:
           limits:
-            cpu: '1'
-            memory: 1G
+            cpu: 600m
+            memory: 600M
           requests:
             cpu: 400m
             memory: 500M
