@@ -11,6 +11,14 @@ data:
       env:
         - name: JUPYTER_PRELOAD_REPOS
           value: https://github.com/guimou/xraylab_notebooks.git
+    - name: globals
+      resources:
+        requests:
+          memory: 500m
+          cpu: 500m
+        limits:
+          memory: 1Gi
+          cpu: 1
 ---
 apiVersion: kfdef.apps.kubeflow.org/v1
 kind: KfDef

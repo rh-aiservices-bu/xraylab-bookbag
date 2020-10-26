@@ -6,8 +6,8 @@ spec:
   template:
     metadata:
         annotations:
-          autoscaling.knative.dev/maxScale: '3'
-          autoscaling.knative.dev/target: '1'
+          autoscaling.knative.dev/maxScale: '2'
+          autoscaling.knative.dev/target: '2'
           revisionTimestamp: ''
     spec:
       containers:
