@@ -10,6 +10,7 @@ spec:
           autoscaling.knative.dev/target: '2'
           revisionTimestamp: ''
     spec:
+      timeoutSeconds: 30
       containers:
       - image: 'quay.io/guimou/xraylab-risk-assessment:rhtr_v1.4'
         ports:
