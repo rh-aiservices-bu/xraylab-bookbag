@@ -24,7 +24,7 @@ oc apply -f 04_dc-xrayedgedb.yaml
 
 === Verification
 
-From the Console menu (you must still be in the `xraylab-{GUID}` project), navigate to Workloads->Pods and wait for the `xraylabdb-x-xxxx` Pod to be in the Running state.
+From the Console menu (you must still be in the `{GUID}` project), navigate to Workloads->Pods and wait for the `xraylabdb-x-xxxx` Pod to be in the Running state.
 
 === Database configuration
 

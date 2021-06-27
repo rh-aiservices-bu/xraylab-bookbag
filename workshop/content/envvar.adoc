@@ -13,19 +13,19 @@ We will obviously need some parameters that our different application will need 
 
 IMPORTANT: Don't forget this step!
 
-We can now come back to the main project that has been created for you for this: `xraylab-{GUID}`
+We can now come back to the main project that has been created for you for this: `{GUID}`
 
 On the Terminal window, enter this command (type it, copy/paste, or just click on it, this is the last time I'll put this notice...):
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-oc project xraylab-{GUID}
+oc project {GUID}
 ----
 
 You should normally get this:
 [source,bash,subs="{markup-in-source}"]
 ----
-Now using project "xraylab-{GUID}" on server ...
+Now using project "{GUID}" on server ...
 ----
 
 
@@ -48,12 +48,12 @@ cat 02_config-maps.yaml
 
 You can see that there are 3 config maps that will be created, and that two values must be edited, `bucket-base-name` and `url-external`.
 
-* The first one is your choice, but I *strongly* recommend that you use the same name as your main project, `xraylab-{GUID}`. It will be easier to help you in case of problems, and it has to be *unique in the whole cluster*. +
+* The first one is your choice, but I *strongly* recommend that you use the same name as your main project, `{GUID}`. It will be easier to help you in case of problems, and it has to be *unique in the whole cluster*. +
 You can edit the file `02_config-maps.yaml` with your favorite editor (vi and nano are available), or simply do:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-sed -i 's/bucket-base-name_replace_me/xraylab-{GUID}/g' 02_config-maps.yaml
+sed -i 's/bucket-base-name_replace_me/{GUID}/g' 02_config-maps.yaml
 ----
 
 * The second one is the external route to the RGW. It will be used to directly display images from the different buckets into our Grafana dashboard. +
@@ -114,7 +114,7 @@ oc apply -f 03_secrets.yaml
 
 === Step 5: Verification
 
-* Change your workspace to the Console, navigate to Projects and select `xraylab-{GUID}`.
+* Change your workspace to the Console, navigate to Projects and select `{GUID}`.
 
 * From the Console menu, navigate to Workloads->Config Maps and check that `buckets-config`, `database-host` and `service-point` have been created.
 

@@ -11,7 +11,7 @@ IMPORTANT: Please stop the demo after a few minutes to make sure you don't fill 
 
 === Through the console
 
-On the console, in your main project (xraylab-{GUID}), navigate to Workloads->Deployment Configs, select `image-generator`, and go to the Environment tab.
+On the console, in your main project ({GUID}), navigate to Workloads->Deployment Configs, select `image-generator`, and go to the Environment tab.
 
 Change the `SECONDS_WAIT` parameter from 1 to 0, and click *Save* at the bottom.
 
@@ -28,4 +28,4 @@ oc patch dc image-generator --type=json -p '[{"op":"replace","path":"/spec/templ
 
 === And now?
 
-Just go to the Grafana dashboard which should still be opened on one of your browser tab (it should be `https://grafana-route-xraylab-{GUID}.{CLUSTER_SUBDOMAIN}`), and you should see the pipeline stopping (no new images coming in)!
+Just go to the Grafana dashboard which should still be opened on one of your browser tab (it should be `https://grafana-route-{GUID}.{CLUSTER_SUBDOMAIN}`), and you should see the pipeline stopping (no new images coming in)!

@@ -20,11 +20,11 @@ Have a look at the file (if you want, this one is pretty long and complicated), 
 Originally the command would look like:
 `oc process -f 14_grafana-xraylab-images-dashboard-template.yaml -p image_server_url=<replace_me> -p bucket_base_name=<replace_me> | oc apply -f -`
 
-But if you have followed my instructions and kept the bucket_base_name to be your main project name, `xraylab-{GUID}`, the command should directly be:
+But if you have followed my instructions and kept the bucket_base_name to be your main project name, `{GUID}`, the command should directly be:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-oc process -f 14_grafana-xraylab-images-dashboard-template.yaml -p image_server_url=https://image-server-xraylab-{GUID}.{CLUSTER_SUBDOMAIN} -p bucket_base_name=xraylab-{GUID} | oc apply -f -
+oc process -f 14_grafana-xraylab-images-dashboard-template.yaml -p image_server_url=https://image-server-{GUID}.{CLUSTER_SUBDOMAIN} -p bucket_base_name={GUID} | oc apply -f -
 ----
 
 === Verification
