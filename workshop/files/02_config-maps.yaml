@@ -13,7 +13,7 @@ metadata:
   name: service-point
 data:
   url-external: 'url-external_replace_me' # No trailing /
-  url: 'http://rook-ceph-rgw-s3a.openshift-storage.svc.cluster.local' # No trailing /
+  url: 'http://rook-ceph-rgw-ocs-storagecluster-cephobjectstore.openshift-storage.svc.cluster.local' # No trailing /
 ---
 apiVersion: v1
 kind: ConfigMap

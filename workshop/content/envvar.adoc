@@ -57,12 +57,12 @@ sed -i 's/bucket-base-name_replace_me/{GUID}/g' 02_config-maps.yaml
 ----
 
 * The second one is the external route to the RGW. It will be used to directly display images from the different buckets into our Grafana dashboard. +
-This route is: `http://rgw-openshift-storage.{CLUSTER_SUBDOMAIN}` +
+This route is: `https://s3-rgw-openshift-storage.{CLUSTER_SUBDOMAIN}` +
 Again, you can edit the file `02_config-maps.yaml` or simply do:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-sed -i 's/url-external_replace_me/https:\/\/rgw-openshift-storage.{CLUSTER_SUBDOMAIN}/g' 02_config-maps.yaml
+sed -i 's/url-external_replace_me/https:\/\/s3-rgw-openshift-storage.{CLUSTER_SUBDOMAIN}/g' 02_config-maps.yaml
 ----
 
 === Step 3: Create Config Maps
@@ -74,9 +74,9 @@ Now that our file is ready, we can create the Config Maps:
 oc apply -f 02_config-maps.yaml
 ----
 
-=== Step 4: Edit the Secrets
+=== Step 4: Review the Secrets
 
-It's the same process that we will follow, but this time for the secrets. +
+It's the same process that we will follow, but this time for the database secrets. +
 Take a look at the secrets file:
 
 [source,bash,subs="{markup-in-source}",role=execute]
@@ -84,24 +84,7 @@ Take a look at the secrets file:
 cat 03_secrets.yaml
 ----
 
-The values to replace here are you S3 Access Key and Secret. Here they are again: +
-
-* AWS_ACCESS_KEY: `{ACCESS_KEY}`
-* AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
-
-You can edit the file and replace the value, or simply do:
-
-[source,bash,subs="{markup-in-source}",role=execute]
-----
-sed -i 's/AWS_ACCESS_KEY_ID_replace_me/{ACCESS_KEY}/g' 03_secrets.yaml
-----
-
-and
-
-[source,bash,subs="{markup-in-source}",role=execute]
-----
-sed -i 's/AWS_SECRET_ACCESS_KEY_replace_me/{SECRET_KEY}/g' 03_secrets.yaml
-----
+Again, if you modify the values already in the file you may have to adapt other files and instructions.
 
 === Step 5: Create the Secrets
 
