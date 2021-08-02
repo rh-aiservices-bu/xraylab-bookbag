@@ -7,29 +7,32 @@
 
 == Buckets and Bucket Notifications creation
 
-For this last preparation step, we will use a Jupyer Notebook. Remember what we have deployed in the very first module? It's time to use it!
+For this last preparation step, we will use a Jupyter Notebook. If you don't know what it is, don't worry, we'll see this together!
 
 === Connect to JupyterHub
 
-As ODH has been deployed in the *odh-{GUID}* project, the Route to access it will be: +
+https://opendatahub.io/[Open Data Hub] (ODH) is an Open Source project that provides an easy way to deploy many different data science tools.
+Open Data Hub has already been installed on the cluster, and you can access it through this url: +
 
-https://jupyterhub-odh-{GUID}.{CLUSTER_SUBDOMAIN}/[https://jupyterhub-odh-{GUID}.{CLUSTER_SUBDOMAIN}/,window=_blank]
+https://odh-dashboard-opendatahub.{CLUSTER_SUBDOMAIN}/[https://odh-dashboard-opendatahub.{CLUSTER_SUBDOMAIN}/,window=_blank]
 
-Just click on this link, a new tab will open. Click on the button *Sign in with OpenShift*, and use your OpenTLC credentials to connect.+
-On the first connection, OpenShift will ask to authorize the application to access your username just click *Allow selected permissions*.
+Just click on this link, a new tab will open. This is a very basic deployment of ODH, so only JupyterHub, the notebook environment, is available. Click on `Launch` on the Card, and login with you Lab credentials (`{OCP_USERNAME}` / xraylab).+
+On the first connection, OpenShift will ask to authorize the application to access your user info. Just click *Allow selected permissions*.
 
 === Launch Jupyter
 
-On the *Spawner Options* page select the *s2i-minimal-notebook:3.6* image from the first dropdown (this should be the default image), and click *Spawn* at the bottom.
+On the *Start a notebook server* page select the *Standard Data Science* option (this should be the default), and click *Start Server* at the bottom (leave the rest on default).
 
-Your Jupyter environment will take 15-20 seconds to launch.
+Your JupyterLab environment will take 15-20 seconds to launch.
 
-It will display a _File Explore like_ interface. Click on the *xraylab_notebooks.git* folder, then on the *create_notifications.ipynb* file, which will launch the notebook. You can directly follow the rest of the instructions there.
+On the left, you will find a _Explorer like_ interface. Open the *xraylab_notebooks.git* folder, then open the *create_notifications.ipynb* file, which will launch the notebook. You can directly follow the rest of the instructions there.
 
 IMPORTANT: At the begining of the notebook, don't forget to enter the parameters! You will need the following info:
 
 * bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommandation, this should be `{GUID}`.
 * AWS_ACCESS_KEY: `{ACCESS_KEY}`
 * AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
+
+NOTE: In the `xraylab_notebooks.git` folder, you will also find the notebook that was used to train the model if this is something you are interested in.
 
 

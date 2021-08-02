@@ -4,16 +4,17 @@
 :CLUSTER_SUBDOMAIN: %CLUSTER_SUBDOMAIN%
 :ACCESS_KEY: %S3_access_key%
 :SECRET_KEY: %S3_secret_key%
+:RGW_ROUTE: %rgw_url_external%
 
 == Config Maps and Secrets
 
-We will obviously need some parameters that our different application will need to work.
+We will obviously need some parameters that our different application will use.
 
-=== Step 1: Change project
+=== Step 1: Main project
 
 IMPORTANT: Don't forget this step!
 
-We can now come back to the main project that has been created for you for this: `{GUID}`
+First, let's make sure we are in the main project that has been created for you for this lab: `{GUID}`
 
 On the Terminal window, enter this command (type it, copy/paste, or just click on it, this is the last time I'll put this notice...):
 

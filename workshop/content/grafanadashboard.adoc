@@ -11,7 +11,7 @@ The same method will be applied to process the template and apply the result.
 
 === Creation
 
-Have a look at the file (if you want, this one is pretty long and complicated), and process/apply it. The now three parameters that have to be processed in the template are:
+Have a look at the file (if you want, this one is also pretty long and complicated), and process/apply it. The now three parameters that have to be processed in the template are:
 
 * image_server_url: the route to the image server deployment. It’s the external route that your browser will directly connect to, to retrieve and display the images.
 

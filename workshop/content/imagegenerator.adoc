@@ -5,10 +5,9 @@
 == Image Generator
 
 Of course, we won't _generate_ XRay images for this demo. +
-Instead, this component will copy randomly chosen source XRay images hosted in a public AWS bucket (around 600 images) to our Ceph incoming bucket. +
+Instead, this component will copy randomly chosen source XRay images hosted in a public bucket (from around 600 images) to our ODF incoming bucket. +
 
-The generator features an environment variable, called `seconds_wait`, that sets a waiting time between every images. +
-And when you set this parameter to 0, which is the initial state, our process stays idle! That's our on/off button to launch and stop the demo.
+The initial generator DeploymentConfig is scaled down to zero. That's normal as we want to deploy all the components before starting the demo. Leave it like this for the moment.
 
 === Creation
 

@@ -7,16 +7,12 @@
 
 It's now time to launch our demo!
 
-As explained before, the only thing we have to do is to change the `seconds_wait` parameter in the image-generator, and it will begin to copy images in our base bucket, which will start the pipeline. +
+As explained before, the only thing we have to do is to scale up the image-generator, and it will begin to copy images in our base bucket, which will start the pipeline. +
 There are two ways to do that.
 
 === Through the console
 
-On the console, in your main project ({GUID}), navigate to Workloads->Deployment Configs, select `image-generator`, and go to the Environment tab.
-
-Change the `SECONDS_WAIT` parameter from 0 to 1, and click *Save* at the bottom.
-
-This will redeploy the image generator pod with the new configuration.
+On the console, in your main project ({GUID}), navigate to Workloads->Deployment Configs, select `image-generator`. On the `Details` tab, scale it up to one instance.
 
 === Through the CLI
 
@@ -24,7 +20,7 @@ You can directly patch the Deployment Config with this command:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-oc patch dc image-generator --type=json -p '[{"op":"replace","path":"/spec/template/spec/containers/0/env/0/value","value":"1"}]'
+oc scale deploymentconfig/image-generator --replicas=1
 ----
 
 === And now?

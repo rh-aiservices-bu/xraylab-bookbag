@@ -4,7 +4,7 @@
 
 == Image Server
 
-This is a very simple Web server implementing an API which when queried for the last image from a category will query the database and return an HTML Tag that will be used in an iframe in the Grafana dashboard. The API implements two different formats for the images. +
+This is a very simple Web server implementing an API which, when queried for the last image from a category, will query the database and return an HTML tag that will be used in an iframe in the Grafana dashboard. The API implements two different formats for the images. +
 
 For example, when queried for `/last_image_small/<bucket_name>`, the server returns:
 
@@ -13,7 +13,7 @@ For example, when queried for `/last_image_small/<bucket_name>`, the server retu
 <img src="<storage_url>/<bucket_name>/<image_name>" style="width:260px;"></img>
 ----
 
-I told you, nothing terrific here...
+I told you, nothing terrific here... But really cool trick to add live images inside your Grafana dashboards!
 
 === Creation
 

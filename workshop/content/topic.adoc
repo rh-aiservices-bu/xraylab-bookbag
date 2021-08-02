@@ -4,7 +4,7 @@
 
 == Kafka Topic
 
-This is the "channel" where our bucket notifications will be sent. We will still use the AMQ Streans operator to easily create it.
+This is the "channel" where our bucket notifications will be sent. We will still use the AMQ Streans operator to easily create it (see how useful an operator is?).
 
 === Creation
 
@@ -18,4 +18,4 @@ oc apply -f 07_topics.yaml
 === Verification
 
 In the Console, you can navigate to Operators->Installed Operators->Red Hat Integration - AMQ streams, and select the Kafka Topic tab. `xray-images` should be listed. +
-We will also see another method in the next step.
+We will also see another method to verify this in the next step.

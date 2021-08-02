@@ -4,24 +4,26 @@
 
 == The bookbag environment
 
-In case you've never used Bookbag before (that's where you are now), a few things that can help you.
+In case you've never used Bookbag environment before (which is where you are now), a few things to help you.
 
 * On this *left side*, you have the *instructions* needed to complete the Lab. They are split into different modules. Please respect the order of those modules, as some steps are interdependant.
 
 * On the *right side*, you have your *workspace*, where you can switch between two views:
 
-** *Terminal* view: that's where you'll directly enter commands using mainly the *oc* client.
+** *Terminal* view: that's where you'll directly enter commands, using mainly the *oc* client.
 
 NOTE: Cool stuff! When you click on a command in the instructions, it gets automatically copied in the Terminal view. No need to type or copy-paste.
 
-** *Console* view: this is the OpenShift Console that will be mostly used to see what's happening, verify the deployments,...
+** *Console* view: this is the OpenShift Console that will be used mostly to see what's happening, verify the deployments,...
 
 //-
-* Both Terminal and Console view are already logged in into OpenShift as the bookbag user. +
-Although this is not your own account (the OpenTLC one), it has exactly the same rights and can perform the same actions. So you can do everything directly from Bookbag as it is. +
-If you don't want to use this Terminal and this Console view and use you own environment, you can also login direcly with those commands (of course you'll then have to type or copy/paste things, so be careful...):
+* Both Terminal and Console views are already logged in into OpenShift as the "bookbag user". +
+Although this is not the account directly associated with your Lab, it has exactly the same rights and can perform the same actions. So you can do everything directly from Bookbag as it is. +
+If you don't want to use this Terminal and this Console view inside Bookbag and use you own environment, you can also login direcly with those commands (of course you'll then have to type or copy/paste things, so be careful...):
 
 ** Terminal (oc client needed): `%login_command%`
 ** OCP Console address: `%web_console_url%`
+** Your username is: `%ocp_username%`
+** Your password is: `xraylab`
 
-NOTE: if you are using your own command-line environment, you'll need some source files to complete the Lab. They are accessible https://github.com/guimou/rhtr2020_xraylab/tree/main/workshop/files[here].
+NOTE: if you are using your own command-line environment, you'll need some source files to complete the Lab. They are accessible https://github.com/red-hat-data-services/xraylab-bookbag/tree/main/workshop/files[here].

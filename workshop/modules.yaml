@@ -8,9 +8,6 @@ modules:
     exit_sign: 'Next: Lab Environment'
   environment:
     name: Lab Environment
-    exit_sign: 'Next: OpenDataHub'
-  opendatahub:
-    name: OpenDataHub
     exit_sign: 'Next: ConfigMaps and Secrets'
   envvar:
     name: ConfigMaps and Secrets
