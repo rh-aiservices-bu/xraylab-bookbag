@@ -1,3 +1,4 @@
+---
 apiVersion: v1
 kind: Template
 metadata:
@@ -668,7 +669,7 @@ objects:
             "pluginVersion": "7.1.1",
             "targets": [
               {
-                "expr": "sum(kube_pod_container_status_running{pod=~\"risk-assessment.*\",namespace=~\"$namespace\"})",
+                "expr": "count(kube_pod_info{pod=~\"risk-assessment.*\",namespace=~\"$namespace\"})",
                 "format": "time_series",
                 "instant": true,
                 "interval": "",
@@ -1257,11 +1258,11 @@ objects:
     - name: ryantxu-ajax-panel
       version: 0.0.7-dev
 parameters:
-- description: Route to the image server
-  name: image_server_url
-- description: Bucket base name
-  name: bucket_base_name
-- description: Project namespace
-  name: namespace
+  - description: Route to the image server
+    name: image_server_url
+  - description: Bucket base name
+    name: bucket_base_name
+  - description: Project namespace
+    name: namespace
 labels:
   grafana: dashboard

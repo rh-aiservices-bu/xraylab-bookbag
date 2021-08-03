@@ -99,7 +99,6 @@ spec:
         - name: xraylabdb-data
           persistentVolumeClaim:
             claimName: xraylabdb
-            storageClassName: 
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
@@ -118,4 +117,3 @@ spec:
       targetPort: 3306
   selector:
     app: xraylabdb
-

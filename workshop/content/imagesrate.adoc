@@ -1,5 +1,6 @@
 :GUID: %guid%
 :OCP_USERNAME: %ocp_username%
+:CLUSTER_SUBDOMAIN: %CLUSTER_SUBDOMAIN%
 :markup-in-source: verbatim,attributes,quotes
 
 == How to increase the image production rate
@@ -27,4 +28,4 @@ oc patch dc image-generator --type=json -p '[{"op":"replace","path":"/spec/templ
 
 === And now?
 
-Just go to the Grafana dashboard which should still be opened on one of your browser tab (it should be `https://grafana-route-{GUID}.{CLUSTER_SUBDOMAIN}`), and see the change!
+Just go to the Grafana dashboard which should still be opened on one of your browser tab (it should be https://grafana-route-{GUID}.{CLUSTER_SUBDOMAIN}[https://grafana-route-{GUID}.{CLUSTER_SUBDOMAIN}/,window=_blank]), and see the change!

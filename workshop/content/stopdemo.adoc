@@ -19,7 +19,7 @@ You can directly patch the Deployment Config with this command:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
-oc scale deploymentconfig/image-generator --replicas=1
+oc scale deploymentconfig/image-generator --replicas=0
 ----
 
 === And now?

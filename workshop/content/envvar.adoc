@@ -77,7 +77,7 @@ oc apply -f 02_config-maps.yaml
 
 === Step 4: Review the Secrets
 
-It's the same process that we will follow, but this time for the database secrets. +
+It's the same process that we will follow, but this time for the secrets. +
 Take a look at the secrets file:
 
 [source,bash,subs="{markup-in-source}",role=execute]
@@ -85,7 +85,24 @@ Take a look at the secrets file:
 cat 03_secrets.yaml
 ----
 
-Again, if you modify the values already in the file you may have to adapt other files and instructions.
+The values to replace here are you S3 Access Key and Secret. Here they are again: +
+
+* AWS_ACCESS_KEY: `{ACCESS_KEY}`
+* AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
+
+You can edit the file and replace the value, or simply do:
+
+[source,bash,subs="{markup-in-source}",role=execute]
+----
+sed -i 's/AWS_ACCESS_KEY_ID_replace_me/{ACCESS_KEY}/g' 03_secrets.yaml
+----
+
+and
+
+[source,bash,subs="{markup-in-source}",role=execute]
+----
+sed -i 's/AWS_SECRET_ACCESS_KEY_replace_me/{SECRET_KEY}/g' 03_secrets.yaml
+----
 
 === Step 5: Create the Secrets
 
@@ -98,7 +115,9 @@ oc apply -f 03_secrets.yaml
 
 === Step 5: Verification
 
-* Change your workspace to the Console, navigate to Projects and select `{GUID}`.
+* Change your workspace to the Console, and switch from Developer to Administrator view (on the top left).
+
+* Navigate to Projects and select `{GUID}`.
 
 * From the Console menu, navigate to Workloads->Config Maps and check that `buckets-config`, `database-host` and `service-point` have been created.
 
