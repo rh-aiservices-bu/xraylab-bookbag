@@ -2,13 +2,13 @@
 
 == Review
 
-Normally you should have learned a few things in this Lab:
+You should have learned a few things in this Lab:
 
 * Create Ceph buckets
 * Create bucket notifications
 * Deploy and use Kafka
 * Deploy and use Serverless functions
-* ...
+* And many other things!
 
 But more importantly, you have seen how you can connect all those components together to create a data pipeline. This example is applied to healthcare, and uses an AI/ML model, but the underlying architecture pattern can be applied anywhere, in a lot of situations. 
 

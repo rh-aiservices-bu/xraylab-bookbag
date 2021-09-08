@@ -25,4 +25,4 @@ oc scale deploymentconfig/image-generator --replicas=1
 
 === And now?
 
-Just go to the Grafana dashboard which should still be opened on one of your browser tab (it should be `https://grafana-route-{GUID}.{CLUSTER_SUBDOMAIN}`), and you should see the pipeline running!
+Just go to the Grafana dashboard which should still be opened on one of your browser tabs (it should be `https://grafana-route-{GUID}.{CLUSTER_SUBDOMAIN}`), and you should see the pipeline running!

@@ -4,7 +4,7 @@
 
 == KNative Serving
 
-Now it begins to get interesting... We will deploy here the Serverless Service that will receive the bucket notifications. When there are messages coming in, our processing pod will be scaled up from zero instances to whatever number is necessary to handle the load (don't worry or try to break anything, there are some limits in place in your environment). +
+Now it begins to get interesting... We will deploy here the Serverless Service that will receive the bucket notifications. When there are messages coming in, our processing pod will be scaled up from zero instances to whatever number is necessary to handle the load (don't worry about breaking anything, there are some limits in place in your environment). +
 
 As the OpenShift Serverless operator is already deployed on the cluster, it's really easy to create the Service!
 

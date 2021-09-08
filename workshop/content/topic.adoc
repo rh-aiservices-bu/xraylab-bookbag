@@ -4,7 +4,7 @@
 
 == Kafka Topic
 
-This is the "channel" where our bucket notifications will be sent. We will still use the AMQ Streans operator to easily create it (see how useful an operator is?).
+This is the "channel" where our bucket notifications will be sent. We will still use the AMQ Streams operator to easily create it (see how useful an operator is?).
 
 === Creation
 

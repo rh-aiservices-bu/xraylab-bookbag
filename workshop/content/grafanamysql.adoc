@@ -20,4 +20,4 @@ oc apply -f 13_grafana-mysql-datasource.yaml
 === Verification
 
 In the Console, you can navigate to Operators->Installed Operators->Grafana Operator, and select the Grafana Data Source tab. `mysql-grafana-datasource` should be listed. +
-You will notice that there already is another Data Source here, `prometheus-grafana-datasource`. This has been created as part of you Lab deployment as it involved copying secrets to access the cluster Prometheus instance. Believe me, it was easier this way. This other datasource will allow us to display stats on CPU/RAM usage and Pods deployments.
+You will notice that there already is another Data Source here, `prometheus-grafana-datasource`. This has been created as part of your lab deployment as it involved copying secrets to access the cluster Prometheus instance. Believe me, it was easier this way. This other datasource will allow us to display stats on CPU/RAM usage and Pods deployments.
