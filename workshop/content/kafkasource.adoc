@@ -6,11 +6,20 @@
 
 Our next component is the one that will subscribe to the Kafka Topic, and forward the messages to the Service we just created. +
 
-If you look at the definition file (you should!), it basically says: subscribe to this topic from this Kafka cluster, and send events to this Service.
+The definition file basically says: subscribe to this topic from this Kafka cluster, and send events to this Service.
 
 === Creation
 
-Have a look at the file, and apply it:
+The file 11_kafkasource-risk-assessment.yaml must be edited to fill-in the correct namespace, `{GUID}`
+
+You can do it manually, or just run this command:
+
+[source,bash,subs="{markup-in-source}",role=execute]
+----
+sed -i 's/namespace_replace_me/{GUID}/g' 11_kafkasource-risk-assessment.yaml
+----
+
+You can now apply the file:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
