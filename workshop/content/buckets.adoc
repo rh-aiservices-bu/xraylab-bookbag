@@ -29,6 +29,7 @@ On the left, you will find a _Explorer like_ interface. Open the *xraylab_notebo
 
 IMPORTANT: At the begining of the notebook, don't forget to enter the parameters! You will need the following info:
 
+* namespace: your namespace is `{GUID}`
 * bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommandation, this should be `{GUID}`.
 * AWS_ACCESS_KEY: `{ACCESS_KEY}`
 * AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
