@@ -20,4 +20,4 @@ oc apply -f 12_dc-image-generator.yaml
 
 === Verification
 
-In the Console, navigate to Workloads->Pods, and wait for the pod `image-generator-xxxxx` to be in the Running state.
+In the Console, navigate to Workloads->DeploymentConfigs and check that `image-generator` is there with a status of `0 of 0 pods`. Don't scale it up yet, you'll do that when the pipeline is fully ready (if you start it anyway it will just CrashLoop until the buckets are ready, which is done later).
