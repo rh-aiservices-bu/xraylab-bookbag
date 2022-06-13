@@ -7,7 +7,7 @@
 
 == Buckets and Bucket Notifications creation
 
-For this last preparation step, we will use a Jupyter Notebook. If you don't know what it is, don't worry, we'll see this together!
+For this last preparation step, we will use a Jupyter Notebook. If you don't know what it is, don't worry, we will see this together!
 
 === Connect to JupyterHub
 
@@ -25,12 +25,12 @@ On the *Start a notebook server* page select the *Standard Data Science* option 
 
 Your JupyterLab environment will take 15-20 seconds to launch.
 
-On the left, you will find a _Explorer like_ interface. Open the *xraylab_notebooks.git* folder, then open the *create_notifications.ipynb* file, which will launch the notebook. You can directly follow the rest of the instructions there.
+On the left, you will find an _Explorer like_ interface. Open the *xraylab_notebooks.git* folder, then open the *create_notifications.ipynb* file, which will launch the notebook. You can directly follow the rest of the instructions there.
 
-IMPORTANT: At the begining of the notebook, don't forget to enter the parameters! You will need the following info:
+IMPORTANT: At the beginning of the notebook, don't forget to enter the parameters! You will need the following info:
 
 * namespace: your namespace is `{GUID}`
-* bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommandation, this should be `{GUID}`.
+* bucket_base_name: this is the SAME one you have entered in the config map module. If you have followed my recommendation, this should be `{GUID}`.
 * AWS_ACCESS_KEY: `{ACCESS_KEY}`
 * AWS_SECRET_ACCESS_KEY: `{SECRET_KEY}`
 

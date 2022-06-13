@@ -8,7 +8,7 @@
 
 == Config Maps and Secrets
 
-We will obviously need some parameters that our different application will use.
+To start our deployment, we will obviously need to define some parameters that our different application will use.
 
 === Step 1: Main project
 
@@ -32,8 +32,8 @@ Now using project "{GUID}" on server ...
 
 === Step 2: Edit Config Maps
 
-You should still be in the `files` directory in the Terminal (full path `/opt/app-root/workshop/files`). +
-If not change your directory to where the installation files are:
+Make sure you are in the `files` directory in the Terminal (full path `/opt/app-root/workshop/files`). +
+If not, change your directory to where the installation files are:
 
 [source,bash,subs="{markup-in-source}",role=execute]
 ----
@@ -121,4 +121,4 @@ oc apply -f 03_secrets.yaml
 
 * From the Console menu, navigate to Workloads->Config Maps and check that `buckets-config`, `database-host` and `service-point` have been created.
 
-* Navigate to Workloads->Secrets and check that `s3-secret` and `db-secret` have been created.
+* Navigate to Workloads->Secrets and check that `s3-secret` and `db-secret` have been created (Note: there will be a pre-existing `s3-secret-bck` Secret, you can ignore it, it was created during the Lab deployment process).

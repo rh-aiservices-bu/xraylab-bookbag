@@ -7,11 +7,11 @@
 == Your shared cluster environment
 
 Some more information before we start. +
-You Lab has been deployed on a shared cluster, where the following components or applications have been deployed.
+You Lab has been created on a shared cluster, where the following components or applications have been deployed.
 
 === OpenShift Data Foundation
 
-ODF provides the object storage needed for this demo. A user account in the ObjectStore (the Rados Gateway, or RGW) has already been provisioned for you. It will allow you to interact with the RGW through the S3 API to create Object Buckets and configure notifications. +
+ODF provides the object storage needed for this demo. A user account in the ObjectStore (accessible through the Rados Gateway, or RGW) has already been provisioned for you. It will allow you to interact with the RGW through the S3 API to create Object Buckets and configure notifications. +
 Your credentials for this access are:
 
 - AWS_ACCESS_KEY: `{ACCESS_KEY}`

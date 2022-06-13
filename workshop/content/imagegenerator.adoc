@@ -7,7 +7,7 @@
 Of course, we won't _generate_ XRay images for this demo. +
 Instead, this component will copy randomly chosen source XRay images hosted in a public bucket (from around 600 images) to our ODF incoming bucket. +
 
-The initial generator DeploymentConfig is scaled down to zero. That's normal as we want to deploy all the components before starting the demo. Leave it like this for the moment.
+NOTE: The initial generator DeploymentConfig is scaled down to zero. That's normal as we want to finish deploying all the components before starting the demo. Leave it like this for the moment.
 
 === Creation
 

@@ -13,7 +13,7 @@ spec:
     spec:
       timeoutSeconds: 30
       containers:
-      - image: 'quay.io/rh-data-services/xraylab-risk-assessment:latest'
+      - image: 'quay.io/rh-data-services/xraylab-risk-assessment:v1.0.3'
         ports:
               - containerPort: 5000
         env:

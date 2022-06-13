@@ -12,7 +12,7 @@ All these information will be used on our Grafana Dashboard that displays last t
 Everything is defined in the file `04_dc-xrayedgedb.yaml`:
 
 * The *Persistent Volume Claim* on ODF block storage class, where the data will be physically stored.
-* The *Deployment Configuration* that will deploy a simple MariaDB database (using the previsously created Config Maps and Secrets).
+* The *Deployment Configuration* that will deploy a simple MariaDB database (using the previously created Config Maps and Secrets).
 * The *Service* that will expose the database internally so that the Grafana instance can retrieve the data.
 
 Deploy all those components with:

@@ -5,7 +5,7 @@
 == Kafka Cluster
 
 This is where our bucket notifications will be sent and made available to the KafkaSource subscriber. We will use the AMQ Streams operator that is installed on the cluster to easily deploy our Kafka cluster. +
-This is a very simple deployment, with no redundancy to save on resources for this Lab. So don't do this at home (read: production)! Don't use this config outside this Lab.
+This is a very simple deployment, with no redundancy and no storage to save on resources for this Lab. So don't do this at home (read: production)! Don't use this config outside this Lab.
 
 === Creation
 

@@ -4,11 +4,11 @@
 
 == Changing the model version
 
-In this demo, we are using only one AI/ML model to infer the risk of pneumonia on the images. It is called *v1*, as displayed on the dasboard. We cannot implement the full scenario with model retraining because it would simply take too much time.
+In this demo, we are using only one AI/ML model to infer the risk of pneumonia on the images. It is called *v1*, as displayed on the dashboard. We cannot implement the full scenario with model retraining because it would simply take too much time.
 
 Instead, we can simulate that a new model, *v2* has been deployed, and see the change on the dashboard (middle panel).
 
-So, in a production environment we would have a CI/CD pipeline deploying a new Revision of our risk-assesment Service. Here we will just patch this Service with a new environment value that represents the model used. This will be written in the database when the image is processed, and then displayed on the dashboad.
+So, in a production environment we would have a CI/CD pipeline deploying a new Revision of our risk-assessment Service. Here we will just patch this Service with a new environment value that represents the model used. This will be written in the database when the image is processed, and then displayed on the dashboard.
 
 To do that, you can just apply this command:
 

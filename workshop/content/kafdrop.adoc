@@ -24,6 +24,6 @@ Then navigate to Networking->Routes. The URL for Kafdrop is in the Location colu
 
 Note that you may have to wait 30-45 seconds after the Pod is in the running state for Kafdrop to answer as it is a slow starting Java application... Just refresh the browser tab a few times and it should come up.
 
-In this UI, you should see the topic we previsouly created, `xray-images`, listed. You can click on it and get more information on the topic, and even view the messages. Well, not yet because the pipeline has not started...
+In this UI, you should see the topic we previously created, `xray-images`, listed. You can click on it and get more information on the topic, and even view the messages. Well, not yet because the pipeline has not started...
 
 You can leave the tab open and come back when the demo is running to have a look at the messages if you want.

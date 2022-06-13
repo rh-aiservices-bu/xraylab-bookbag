@@ -6,7 +6,7 @@
 
 Welcome to the automated Xray images analysis pipeline Lab! +
 
-In this Lab you will learn how to create, configure, and deploy an automated pipeline that will analyze incoming Xray images, make an assessement of the risk of pneumonia, and eventually anonymize some images based on the certainty of this assessment. +
+In this Lab you will learn how to create, configure, and deploy an automated pipeline that will analyze incoming Xray images, make an assessment of the risk of pneumonia, and eventually anonymize some images based on the certainty of this assessment. +
 
 This pipeline uses several tools and features, and we'll learn together how to:
 

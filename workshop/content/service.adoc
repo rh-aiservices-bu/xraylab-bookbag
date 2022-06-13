@@ -6,7 +6,7 @@
 
 Now it begins to get interesting... We will deploy here the Serverless Service that will receive the bucket notifications. When there are messages coming in, our processing pod will be scaled up from zero instances to whatever number is necessary to handle the load (don't worry about breaking anything, there are some limits in place in your environment). +
 
-As the OpenShift Serverless operator is already deployed on the cluster, it's really easy to create the Service!
+The OpenShift Serverless operator is already deployed on the cluster, so it's really easy to create the Service!
 
 === Creation
 
@@ -21,4 +21,4 @@ oc apply -f 10_service-risk-assessment.yaml
 
 In the Console, navigate to Serverless->Serving, and wait for the Service `risk-assessment` Conditions column display `3 OK/3`. This should take about one minute as the operator creates all the necessary components. +
 
-If you want to know more about Serverless, head for the https://access.redhat.com/documentation/en-us/openshift_container_platform/4.7/html/serverless/index[OpenShift documentation].
+If you want to know more about Serverless, head for the https://access.redhat.com/documentation/en-us/openshift_container_platform/4.10/html/serverless/index[OpenShift documentation].

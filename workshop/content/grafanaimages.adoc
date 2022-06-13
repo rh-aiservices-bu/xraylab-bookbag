@@ -7,7 +7,7 @@
 
 This is the definition of the dashboard that displays the large versions of the images. +
 
-And this is a little bit tricky... With the Grafana operator, dasboard definitions are stored in a JSON string where it's not easy to use variables or parameters, like the namespace we are in. So this time our source file is a template that must be first processed before being applied.
+And this is a little bit tricky... With the Grafana operator, dashboard definitions are stored in a JSON string where it's not easy to use variables or parameters, like the namespace we are in. So this time our source file is a template that must be processed first before being applied.
 
 === Creation
 
