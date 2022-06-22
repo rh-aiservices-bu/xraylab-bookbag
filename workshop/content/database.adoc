@@ -40,7 +40,7 @@ oc rsh $(oc get pods | grep xraylabdb | grep Running | awk '{print $1}')
 Your Terminal prompt is now the one from the database Pod! It should display:
 [source,bash,subs="{markup-in-source}"]
 ----
-sh-4.2$
+sh-4.4$
 ----
 
 .Connect to MariaDB

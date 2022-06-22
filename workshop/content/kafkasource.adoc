@@ -25,7 +25,3 @@ You can now apply the file:
 ----
 oc apply -f 11_kafkasource-risk-assessment.yaml
 ----
-
-=== Verification
-
-In the Console, navigate to Workloads->Pods, and wait for the pod `kafkasource-xray-images-xxxx` to be in the Running state.
