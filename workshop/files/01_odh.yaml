@@ -11,7 +11,7 @@ data:
     - name: preload repos
       env:
         - name: JUPYTER_PRELOAD_REPOS
-          value: https://github.com/guimou/xraylab_notebooks.git
+          value: https://github.com/rh-aiservices-bu/xraylab_notebooks.git
     - name: globals
       resources:
         requests:
